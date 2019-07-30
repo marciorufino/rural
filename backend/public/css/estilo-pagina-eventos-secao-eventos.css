@@ -1,0 +1,22 @@
+.corpo-pagina-eventos{
+    display: grid;
+    grid-template-areas: "secao-eventos barra-de-previsao";
+    grid-template-columns: 80% 20%;
+    height: 500px;
+}
+.secao-eventos{
+    grid-area: secao-eventos;   
+    padding-right: 20px;
+}
+.secao-lista-de-eventos{
+    list-style: none;
+    display: grid;
+    grid-template-areas: "img-da-previa previa";
+    grid-template-columns: 40% 60%;
+    background-color: rgba(253, 253, 253);
+    border: solid 1px rgba(148, 119, 119, 0.301);
+    border-radius: 5px;
+}
+.barra-de-previsao{
+    grid-area: barra-de-previsao;
+}

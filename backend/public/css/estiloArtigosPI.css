@@ -1,0 +1,62 @@
+#artigos{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+}
+#artigos h2{
+    margin: 0%;
+    padding: 30px;
+    width: auto;
+    height: 10%;
+    color: white;
+    background-color: rgba(12, 136, 12, 0.705);
+    text-align: center;
+}
+#navArtigos{
+    display: block;
+    width: auto;
+    padding: 0%;
+    text-transform: uppercase;
+}
+#listArtigos{
+    display: block;
+    text-align: center;
+    width: auto;
+    list-style: none;
+    margin: 0px;
+}
+.artigo{
+    display: inline-block;
+    padding: 8%;
+    margin: 0%;
+    margin-top: 4px;
+    border-radius: 2px;    
+    box-shadow: 1px 1px 1px rgba(68, 83, 68, 0.507);
+    transition: background-color 1s;
+}
+.artigo:hover{
+    background-color: rgba(68, 83, 68, 0.233);
+}
+#butaoMaisArtigos{
+    width: auto;
+    height: 20px;
+    text-align: center; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#butaoMaisArtigos a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    padding: 10px;
+    background-color: rgba(12, 136, 12, 0.705);
+    box-shadow: 1px 1px 1px rgba(68, 83, 68, 0.507);
+    border-radius: 200px;
+    transition: color 1s;
+    transition: background-color 1s;
+}
+#butaoMaisArtigos a:hover{
+    color: black;
+    background-color:  rgba(68, 83, 68, 0.233);
+}
