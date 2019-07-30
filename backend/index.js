@@ -6,7 +6,7 @@ const app = express()
 app.use(express.static(path.join(__dirname,"public")))
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname+'/View/index.html')
+    res.sendFile(https://github.com/marciorufino/ruralnbr/blob/master/backend/view/index.html)
 })
 
 app.get('/artigos', (req, res) => {
