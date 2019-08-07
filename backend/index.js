@@ -6,15 +6,15 @@ const app = express()
 app.use(express.static(path.join(__dirname,"public")))
 
 app.get('/', (req, res) => {
-    res.sendFile(__dirname+'/View/index.html')
+    res.sendFile(__dirname+'/view/index.html')
 })
 
 app.get('/artigos', (req, res) => {
-    res.sendFile(__dirname+'/View/artigos.html')
+    res.sendFile(__dirname+'/view/artigos.html')
 })
 
 app.get('/eventos', (req, res) => {
-    res.sendFile(__dirname+'/View/listEventos.html')
+    res.sendFile(__dirname+'/view/listEventos.html')
 })
 
 var port = process.env.PORT || 3000;
