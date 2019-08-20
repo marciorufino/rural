@@ -4,24 +4,24 @@
     <meta charset="UTF-8"/>
     <title>RUARAL NEWS BR</title>
     <meta name="ruaral news brasil - levando informação ao campo" content="notícias, agropecuária, campo, zona rural, agronegócio, vida no campo">
-    <link rel="stylesheet" type="text/css" href="/css/estiloHeader.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloHome.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloArtigosPI.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloComunidade.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloSobreNos.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloRodape.css"/>
+    <link rel="stylesheet" type="text/css" href="/css-1/estiloHeader.css"/>
+    <link rel="stylesheet" type="text/css" href="/css-1/estiloHome.css"/>
+    <link rel="stylesheet" type="text/css" href="/css-1/estiloArtigosPI.css"/>
+    <link rel="stylesheet" type="text/css" href="/css-1/estiloComunidade.css"/>
+    <link rel="stylesheet" type="text/css" href="/css-1/estiloSobreNos.css"/>
+    <link rel="stylesheet" type="text/css" href="/css-1/estiloRodape.css"/>
     <link rel="stylesheet" type="text/css" href="/fontawesome-free-5.9.0-web/css/all.min.css">
 </head>
 <body>
     <div class="interface">
         <header id="cabecalho">
-            <h1>RURAL NEWS BRASIL</h1>
+                <a href="http://localhost:3000/"><img id="logo" src="/imagens/loguinha.png" alt="agroecologia, campo, IFRN, IFRN - Ipanguaçu, notícias"/></a>
             <nav id="navmenu">
                 <ul class="menu">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#artigos">ARTIGOS</a></li>
-                    <li><a href="#comunidade">COMUNIDADE</a>    </li>
-                    <li><a href="#sobre">SOBRE</a></li>
+                    <li class="btn-menu"><a href="#home">HOME</a></li>
+                    <li class="btn-menu"><a href="#artigos">ARTIGOS</a></li>
+                    <li class="btn-menu"><a href="#comunidade">COMUNIDADE</a>    </li>
+                    <li class="btn-menu"><a href="#sobre">SOBRE</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,10 +33,6 @@
                     No RNBR você confere notícias sobre o mercado, pesquisas e soluções, além de ficar por dentro do que acontece em nossa comunidade. 
                 </p>
             </div>
-            <div class="divBusca">
-                <imput type="text" id="textBusca" placeholder="Buscar...">Pesquisar</imput>
-                <img id="botompesquisa" src="imagens/icone-barra-de-pesquisa.PNG">
-            </div>
         </section>
         <section id="artigos">
             <h2>Artigos</h2>
@@ -44,9 +40,10 @@
                 <ul id="listArtigos">
                     <li class="artigo">
                         <div>
-                            <h4>artigo 1</h4>
+                            <h4>Nenhum artigo para mostrar no momento.</h4>
                         </div>
                     </li>
+                    <!--
                     <li class="artigo">
                         <div>
                             <h4>artigo 2</h4>
@@ -82,6 +79,7 @@
                             <h4>artigo 8</h4>
                         </div>
                     </li>
+                    -->
                 </ul>
             </nav>
             <div id="butaoMaisArtigos">
@@ -98,9 +96,10 @@
                 <ul id="listEventos">
                     <li class="itenEvento">
                         <div>
-                            <h4>evento 1</h4>
+                            <h4>Nenhum evento para mostrar no momento.</h4>
                         </div>
                     </li>
+                    <!--
                     <li class="itenEvento">
                         <div>
                             <h4>evento 2</h4>
@@ -116,6 +115,7 @@
                             <h4>evento 4</h4>
                         </div>
                     </li>
+                    -->
                 </ul>
                 <div id="botaoMaisEventos">
                     <a href="http://localhost:3000/eventos">Veja a lista completa de eventos</a>
@@ -133,15 +133,15 @@
             <aside class="sobre-equipe">
                 <h3 class="sobre-equipe-header">Equipe</h3>
                 <figure class="geraldo">
-                    <img style="width: 150px; height: 200px;" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
+                    <img style="width: 150px; height: 200px;" src="/imagens/geraldo.jpg">
                     <figcaption><h4>José Geraldo</h4><h5>coordenador do projeto</h5></figcaption>
                 </figure>
                 <figure class="daniel">
-                    <img style="width: 150px; height: 200px;" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
+                    <img style="width: 150px; height: 200px;" src="/imagens/daniel.jpg">
                     <figcaption><h4>Daniel Águiar</h4><h5>Coordenador do projeto</h5></figcaption>
                 </figure>
                 <figure class="melissa">
-                    <img style="width: 150px; height: 200px;" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
+                    <img style="width: 150px; height: 200px;" src="/imagens/sabrina.jpg">
                     <figcaption><h4>Melissa Sabrina </h4><h5>Aluna de Agroecologia</h5></figcaption>
                 </figure>
                 <figure class="marcio">
@@ -149,19 +149,19 @@
                     <figcaption><h4>Marcio Rufino</h4><h5>Aluno de Informática</h5></figcaption>
                 </figure>
                 <figure class="ana">
-                    <img style="width: 150px; height: 200px;" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
+                    <img style="width: 150px; height: 200px;" src="/imagens/ana.jpg">
                     <figcaption><h4>Ana Paula</h4><h5>Aluna de Agroecologia</h5></figcaption>
                 </figure>
                 <figure class="nay">
-                    <img style="width: 150px; height: 200px;" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
+                    <img style="width: 150px; height: 200px;" src="/imagens/nay.jpg">
                     <figcaption><h4>Nayara Brito</h4><h5>Aluna de Informaática</h5></figcaption>
                 </figure>
                 <figure class="renan">
-                    <img style="width: 150px; height: 200px;" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
+                    <img style="width: 150px; height: 200px;" src="/imagens/renan.jpg">
                     <figcaption><h4>Anderson Renan</h4><h5>Aluno de Tecn. Agroecologia</h5></figcaption>
                 </figure>
                 <figure class="paulo">
-                    <img style="width: 150px; height: 200px;" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
+                    <img style="width: 150px; height: 200px;" src="/imagens/paulo.jpg">
                     <figcaption><h4>Paulo Henrique</h4><h5>Aluno de Informática</h5></figcaption>
                 </figure>
             </aside> 
@@ -176,7 +176,7 @@
                 <h4>Você pode escrever um artigo e publicalo no RNBR!</h4>
             </header>
             <div class="logo-footer">
-                <img src="imagens/background-home.png" style="width: 150px; height: 200px;">
+                <img src="/imagens/loguinha.png" alt="agroecologia, campo, IFRN, IFRN - Ipanguaçu, notícias" style="width: 150px; height: 200px;">
             </div>
             <div class="redes-sociais">    
                 <p>Seguindo nossas redes sociais você nos ajuda disseminar nossas notícias e artigos, além de poder interagir conosco e nos transmitir um feedback mais direto.</p>
