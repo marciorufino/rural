@@ -69,7 +69,11 @@
     padding: 10px;
     background-color: rgba(12, 136, 12, 0.705);
     box-shadow: 1px 1px 1px rgba(68, 83, 68, 0.507);
+<<<<<<< HEAD
     border-radius: 3px;
+=======
+    border-radius: 200px;
+>>>>>>> 39e927ff5a06da0ea7447cb1ddc71994c2cbd5b1
     transition: color 1s;
     transition: background-color 1s;
 }

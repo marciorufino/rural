@@ -40,7 +40,11 @@ body{
 }
 
 .btn-menu {
+<<<<<<< HEAD
     border-radius: 3px;
+=======
+    border-radius: 200px;
+>>>>>>> 39e927ff5a06da0ea7447cb1ddc71994c2cbd5b1
     display: inline-block;
     text-align: center;
     padding: 10px;
