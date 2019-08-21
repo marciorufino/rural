@@ -16,10 +16,6 @@ app.get('/artigos', (req, res) => {
 app.get('/eventos', (req, res) => {
     res.sendFile(__dirname+'/view/listEventos.html')
 })
-
-app.get('/weather?a726c345&city_name=Natal,RN', (req, res) => {
-    res.sendFile(__dirname+'/hg-weather-js-1.0/index.html')
-})
 var port = process.env.PORT || 3000;
 
 app.listen(port, function () {
