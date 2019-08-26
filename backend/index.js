@@ -16,6 +16,11 @@ app.get('/artigos', (req, res) => {
 app.get('/eventos', (req, res) => {
     res.sendFile(__dirname+'/view/listEventos.html')
 })
+
+app.get('/tempo', (req, res) => {
+    res.sendFile(__dirname+'/view/previsao-tempo.html')
+})
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, function () {
