@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="/css/previsao.css">
     <link rel="stylesheet" type="text/css" href="/fontawesome-free-5.9.0-web/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="/js/jquery.js"></script>
 
-    <script src="https://assets.hgbrasil.com/weather/js/hg-weather-1.0.js" type="text/javascript"></script>
+    
+
+
 </head>
 <body>
 
@@ -27,14 +30,14 @@
   <div class="interface">
       <header id="cabecalho">
 
-          <a href="http://localhost:3000/"><img id="logo" src="/imagens/loguinha.png" alt="agroecologia, campo, IFRN, IFRN - Ipanguaçu, notícias"/></a>
+          <a href="https://rural.herokuapp.com/"><img id="logo" src="/imagens/loguinha.png" alt="agroecologia, campo, IFRN, IFRN - Ipanguaçu, notícias"/></a>
           
           <nav id="navmenu">
               <ul class="menu">
-                  <li class="btn-menu"><a href="http://localhost:3000/">HOME</a></li>
-                    <li class="btn-menu"><a href="http://localhost:3000/#artigos">ARTIGOS</a></li>
-                    <li class="btn-menu"><a href="http://localhost:3000/#comunidade">COMUNIDADE</a</li>
-                    <li class="btn-menu"><a href="http://localhost:3000/#sobre">SOBRE NÓS</a></li>
+                  <li class="btn-menu"><a href="https://rural.herokuapp.com/">HOME</a></li>
+                    <li class="btn-menu"><a href="https://rural.herokuapp.com/#artigos">ARTIGOS</a></li>
+                    <li class="btn-menu"><a href="https://rural.herokuapp.com/#comunidade">COMUNIDADE</a</li>
+                    <li class="btn-menu"><a href="https://rural.herokuapp.com/#sobre">SOBRE NÓS</a></li>
               </ul>
           </nav>
       </header>
@@ -45,29 +48,40 @@
                 Selecione a cidade
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" id="455888" href="#">Natal</a>
-                <a class="dropdown-item" id="456908" href="#">Caicó</a>
-                <a class="dropdown-item" id="420779" href="#">Assú</a>
-                <a class="dropdown-item" id="420779" href="#">Ipanguaçu</a>
+                <a class="dropdown-item" href wm-link="tempo-natal.html" wm-destino=".div-tempo">Natal</a>
+                <a class="dropdown-item" >Caicó</a>
+                <a class="dropdown-item" href wm-link="/public/tempo-assu.html" wm-destino=".div-tempo">Assú</a>
+                <a class="dropdown-item" id="435701" onclick="">Ipanguaçu</a>
               </div>
 
+              
               <!-- DADOS DO TEMPO-->
 
-              <div class="hg-weather" id="teste" data-key="a726c345" data-woeid="435701">
-                  <span data-weather="message">Obtendo...<br></span>
-                
-                  <span data-weather="city">Obtendo cidade</span> <span data-weather="temp">00</span>º C<br>
-                  <span data-weather="description">Obtendo tempo...</span><br>
-                  Nascer do Sol: <span data-weather="sunrise">00:00</span> - Pôr do Sol: <span data-weather="sunset">00:00</span><br>
-                  Velocidade do vento: <span data-weather="wind_speedy">-- km/h</span><br>
-                  <img src="http://assets.api.hgbrasil.com/weather/images/44.png" data-weather="image"><br>
-              </div>
+              <div class="div-tempo"></div>
 
               <script>
-                  document.addEventListener("DOMContentLoaded", function() {
-                    HGWeather.initialize();
-                  });
-              </script>
+                  function navegarViaAjax(url, seletor) {
+                    if(!url || !seletor) return
+                    const elemento = document.querySelector(seletor)
+  
+                    fetch(url)
+                        .then(resp => resp.text())
+                        .then(html => {
+                          elemento.innerHTML = html
+                        })
+                  }
+  
+                  document.querySelectorAll('[wm-link]').forEach(link => {
+                    let url = link.attributes['wm-link'].value
+                    const seletorDestino = link.attributes['wm-destino'].value
+  
+                    link.onclick = e => {
+                      e.preventDefault()
+                      navegarViaAjax(url, seletorDestino)
+                    }
+                  })
+                </script>
+
 
             </div>
       </div>
