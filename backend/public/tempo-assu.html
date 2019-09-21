@@ -1,0 +1,17 @@
+<script src="https://assets.hgbrasil.com/weather/js/hg-weather-1.0.js" type="text/javascript"></script>
+
+<div class="hg-weather" id="teste" data-key="98906950" data-woeid="420779">
+        <span data-weather="message">Obtendo...<br></span>
+      
+        <span data-weather="city">Obtendo cidade</span> <span data-weather="temp">00</span>º C<br>
+        <span data-weather="description">Obtendo tempo...</span><br>
+        Nascer do Sol: <span data-weather="sunrise">00:00</span> - Pôr do Sol: <span data-weather="sunset">00:00</span><br>
+        Velocidade do vento: <span data-weather="wind_speedy">-- km/h</span><br>
+        <img src="http://assets.api.hgbrasil.com/weather/images/44.png" data-weather="image"><br>
+    </div>
+
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              HGWeather.initialize();
+            });
+    </script> 

@@ -1,0 +1,14 @@
+.content-tempo{
+    display: block;
+    margin: 5% auto;
+    width: 18vw;
+    padding: 10px;
+    border: 1px solid rgba(00, 00, 00, 0.3);
+    border-radius: 3px;
+    background-color: rgb(253, 253, 253);
+}
+.hg-weather{
+    margin: 40px auto;
+    width: auto;
+    
+}
