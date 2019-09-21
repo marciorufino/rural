@@ -28,6 +28,10 @@ app.get('/tempo', (req, res) => {
     res.sendFile(__dirname+'/view/previsao-tempo.html')
 })
 
+app.get('/login', (req, res) => {
+    res.sendFile(__dirname+'/view/login.html')
+})
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, function () {
