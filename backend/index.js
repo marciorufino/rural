@@ -17,6 +17,14 @@ app.get('/eventos', (req, res) => {
     res.sendFile(__dirname+'/view/listEventos.html')
 })
 
+app.get('/login', (req, res) => {
+    res.sendFile(__dirname+'/view/login.html')
+})
+
+app.get('/cadastro-publicacoes', (req, res) => {
+    res.sendFile(__dirname+'/view/formulario-publicacoes.html')
+})
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, function () {
