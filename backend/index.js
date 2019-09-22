@@ -32,6 +32,10 @@ app.get('/login', (req, res) => {
     res.sendFile(__dirname+'/view/login.html')
 })
 
+app.get('/publicacoes', (req, res) => {
+    res.sendFile(__dirname+'/view/formulario-publicacoes.html')
+})
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, function () {
