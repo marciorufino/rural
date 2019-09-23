@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
+const router = require('./routes')
 
 const app = express()
 
@@ -28,13 +29,7 @@ app.get('/tempo', (req, res) => {
     res.sendFile(__dirname+'/view/previsao-tempo.html')
 })
 
-app.get('/login', (req, res) => {
-    res.sendFile(__dirname+'/view/login.html')
-})
-
-app.get('/publicacoes', (req, res) => {
-    res.sendFile(__dirname+'/view/formulario-publicacoes.html')
-})
+app.use('/use', router)
 
 var port = process.env.PORT || 3000;
 

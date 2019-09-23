@@ -4,31 +4,42 @@
     <meta charset="UTF-8"/>
     <title>RUARAL NEWS BR</title>
     <meta name="ruaral news brasil - levando informação ao campo" content="notícias, agropecuária, campo, zona rural, agronegócio, vida no campo">
-    <link rel="stylesheet" type="text/css" href="/css/estiloHeader.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/css/estiloHome.css"/>
     <link rel="stylesheet" type="text/css" href="/css/estiloArtigosPI.css"/>
     <link rel="stylesheet" type="text/css" href="/css/estiloComunidade.css"/>
     <link rel="stylesheet" type="text/css" href="/css/estiloSobreNos.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloRodape.css"/>
     <link rel="stylesheet" type="text/css" href="/fontawesome-free-5.9.0-web/css/all.min.css">
 </head>
 <body>
 
-    <div class="interface">
-        <header id="cabecalho">
-
-            <a href="https://rural.herokuapp.com/"><img id="logo" src="/imagens/loguinha.png" alt="agroecologia, campo, IFRN, IFRN - Ipanguaçu, notícias"/></a>
-            
-            <nav id="navmenu">
-                <ul class="menu">
-                    <li class="btn-menu"><a href="#home">HOME</a></li>
-                    <li class="btn-menu"><a href="#artigos">ARTIGOS</a></li>
-                    <li class="btn-menu"><a href="#comunidade">COMUNIDADE</a></li>
-                    <li class="btn-menu"><a href="#comunidade">COMUNIDADE</a></li>
-                    <li class="btn-menu"><a href="#sobre">SOBRE</a></li>
-                    <li class="btn-menu"><a href="https://rural.herokuapp.com/tempo">TEMPO</a></li>
-                </ul>
-            </nav>
+    <div class="interface container-fluid p-0 m-0">
+            <header class="row no-gutters">
+                <nav class="col-sm-12 no-gutters navbar navbar-expand-lg navbar-light bg-light m-0 p-3 pl-5 shadow-sm">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><img id="logo" src="/imagens/loguinha.png" alt="agroecologia, campo, IFRN, IFRN - Ipanguaçu, notícias" style="width: 100px; height: 45px;"/></a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="https://rural.herokuapp.com/">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://rural.herokuapp.com/#artigos">ARTIGOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://rural.herokuapp.com/#comunidade">COMUNIDADE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://rural.herokuapp.com/#sobre">SOBRE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://rural.herokuapp.com/tempo">TEMPO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
         </header>
         <main>
         <section id="home">
@@ -171,26 +182,38 @@
                 </figure>
             </aside> 
         </section>
-        <footer class="rodape">
-            <header class="header-footer">
-                <ul class="icones-rede-sociais">
-                    <li class="fab fa-facebook-square"> Facebook</li>
-                    <li class="fab fa-twitter-square"> Twiter</li>
-                    <li class="fab fa-instagram"><a> Instagram</a></li>
-                </ul>
-                <h4>Você pode escrever um artigo e publicalo no RNBR!</h4>
-            </header>
-            <div class="logo-footer">
-                <img src="/imagens/loguinha.png" alt="agroecologia, campo, IFRN, IFRN - Ipanguaçu, notícias" style="width: 150px; height: 200px;">
-            </div>
-            <div class="redes-sociais">    
-                <p>Seguindo nossas redes sociais você nos ajuda disseminar nossas notícias e artigos, além de poder interagir conosco e nos transmitir um feedback mais direto.</p>
-            </div>
-            <div class="artigo-voluntario">
-                <p>Que tal colaborar com o nosso projeto? Escreva o seu artigo e envie para nosso email de contato <em>ruralnewsbr@gmail.com</em>. O seu artigo será avaliado pelos professores responaveis pelo RNBR, e se aprovado será publicado aqui. Você será informado sobre a situação do seu artigo.</p>
-            </div>
-        </footer>
+        <footer class="row no-gutters mt-5 p-4 border-top bg-light">
+                <small class="col-sm-12 d-flex justify-content-center m-2 p-3">&copy; Copyright 2019, Rural News Brasil</small>
+                <p class="col-sm-12 d-flex justify-content-center">
+                    <a class="btn btn-primary m-2 bg-success" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Siga-nos nas redes sociais</a>
+                    <button class="btn btn-primary m-2 bg-success" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Publique seu artigo no RNB</button>
+                </p>
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="collapse multi-collapse m-1 p-1" id="multiCollapseExample1">
+                            <div class="card card-body">
+                                <ul class="icones-rede-sociais">
+                                    <li class="fab fa-facebook-square mr-2"> Facebook</li>
+                                    <li class="fab fa-twitter-square m-2"> Twiter</li>
+                                    <li class="fab fa-instagram m-2"><a> Instagram</a></li>
+                                </ul>    
+                                <p style="width: auto">Seguindo nossas redes sociais você nos ajuda a expandir nossas notícias e artigos, além de poder interagir conosco diretamente e nos transmitir um feedback.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="collapse multi-collapse m-1 p-1" id="multiCollapseExample2">
+                            <div class="card card-body">
+                                    <p style="width: auto">Que tal fazer parte desse projeto?  Escreva o seu artigo e envie para nosso email de contato <em>ruralnewsbr@gmail.com</em>, iremos avaliar o seu trabalho, e se aprovado será publicado aqui! Você será informado sobre o resultado da nossa avaliação.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
     </main>
     </div>    
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="/js/bootstrap.js"></script>
 </html>
