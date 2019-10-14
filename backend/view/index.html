@@ -54,7 +54,14 @@
             <h2 class="col-sm-12 no-gutters m-0 p-3 w-100">Artigos</h2>
             <nav id="navArtigos" class="col-sm-12 no-gutters w-auto p-0">
                 <div class="card-group m-3">
-                    
+                    <div class="card">
+                        <img src="/imagens/loguinha.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">SEM ARTIGOS PARA MOSTRAR.</h5>
+                                <p class="card-text h6">Ainda publicamos nenhum artigo, publicaremos em breve.</p>
+                            </div>
+                    </div>
+                    <!-- 
                     <div class="card">
                         <img src="/imagens/loguinha.png" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -66,7 +73,7 @@
                               Ler Artigo
                             </button>
                             
-                            <!-- Modal -->
+                             Modal 
                             <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                               <div class="modal-dialog" role="document">
                                 <div class="modal-content">
@@ -77,7 +84,7 @@
                                     </button>
                                   </div>
                                   <div class="modal-body text-wrap">
-                                    <!--Imagem do cabeçalho-->  
+                                     
                                     <img class="img-fluid" src="/imagens/loguinha.png" alt="">
                                       
                                     <p class="w-auto p-3">Antes de mais nada: se tem dúvida sobre as diferenças entre Git e Github, dá uma conferida nesse vídeo. No primeiro post sobre Git e Github, ensinei a fazer a parte de configuração e instalação.No segundo, mostrei como fazer o fork de um repositório existente e baixar ele pra sua máquina Agora, chegou a hora de aprender a criar seu próprio repositório e interagir com ele Geralmente as pessoas criam repositórios no Github para hospedar seus projetos pessoais. E esses projetos não precisam ser necessariamente código.Como exemplo nesse post, eu vou criar um repositório para guardar os posts do meu blog. Os comandos que vou usar são os mesmos pra qualquer tipo de projeto/arquivo.</p>
@@ -97,7 +104,7 @@
                               </div>
                             </div>
                         </div>
-                      </div>
+                      </div> -->
                   </div>
             </nav>
             <div id="butaoMaisArtigos" class="col-sm-12 no-gutters">
@@ -111,13 +118,17 @@
             </div>
             <h3 class="col-sm-12 no-gutters m-0 p-1 w-auto">Eventos Na Comunidade</h3>
             <div class="col-sm-12gutters w-aut, -3">
-                <listEventos">
-                    <li class="itenEvento">
-                        <div>
-                            <h4>Nenhum evento publicado</h4>
+                <nav id="navArtigos" class="col-sm-12 no-gutters w-auto p-0">
+                    <div class="card-group m-3">
+                        <div class="card">
+                            <img src="/imagens/loguinha.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">SEM EVENTOS PARA MOSTRAR.</h5>
+                                <p class="card-text h6">Ainda publicamos nenhum evento, publicaremos em breve.</p>
+                            </div>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </nav>
                 <div id="butaoMaisArtigos">
                     <a class="btn btn-success m-2 btn-sm" href="https://ruralnbr.herokuapp.com/eventos">Veja a lista completa de eventos</a>
                 </div>
@@ -131,8 +142,8 @@
                 <p class="w-75 p-1 text-wrap">O desenvolvimento do projeto envolveu a participação de alunos de diferentes cursos do campus, e todos sob a orientação dos professores José Geraldo Bezerra Galvão Junior e Daniel Aguiar da Silva Oliveira Carvalho. Ao lado você pode verificar a equipe completa do projeto.</p>
             </div>
             <div class="col-sm-6 no-gutters p-0">
-                <div class="row no-gutters">
-                    <h3 class="col-sm-12 no-gutters m-0 p-1 w-100 text-white text-center bg-success">Equipe</h3>
+                <div class="row no-gutters d-flex justify-content-left">
+                    <p class="col-sm-12 no-gutters m-0 pb-5 w-100 text-secondary text-left h3">Somos um grupo querendo facilitar o acesso a informação!</p>
                     <figure class="col-sm-2 no-gutters figure m-1">
                         <img class="img-fluid figure-img rounded" src="/imagens/geraldo.jpg">
                         <figcaption class="figure-caption float-sm-left">José Geraldo, coordenador do projeto</figcaption>
