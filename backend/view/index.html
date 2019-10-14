@@ -5,6 +5,7 @@
     <title>RUARAL NEWS BR</title>
     <meta name="ruaral news brasil - levando informação ao campo" content="notícias, agropecuária, campo, zona rural, agronegócio, vida no campo">
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/css/estiloHeader.css"/>
     <link rel="stylesheet" type="text/css" href="/css/estiloHome.css"/>
     <link rel="stylesheet" type="text/css" href="/css/estiloArtigosPI.css"/>
     <link rel="stylesheet" type="text/css" href="/css/estiloComunidade.css"/>
@@ -42,99 +43,84 @@
                 </nav>
         </header>
         <main>
-        <section id="home" class="row no-gutters">
-            <div id = apresentacao>
+        <section id="home" class="row no-gutters w-auto">
+            <div class="col-sm-12 no-gutters w-auto h-100">
                 <h2>Fique por dentro de tudo que acontece no campo.</h2>
-                <p>
+                <p class="w-75 p-1">
                     No RNBR você confere notícias sobre o mercado, pesquisas e soluções, além de ficar por dentro do que acontece em nossa comunidade. 
                 </p>
             </div>
         </section>
-        <section id="artigos" class="row no-gutters">
-            <h2>Artigos</h2>
-            <nav id="navArtigos">
-                <ul id="listArtigos">
-                    <li class="artigo">
-                        <div>
-                            <h4>Nenhum artigo para mostrar no momento.</h4>
+        <section id="artigos" class="row no-gutters w-auto h-100">
+            <h2 class="col-sm-12 no-gutters m-0 p-3 w-100">Artigos</h2>
+            <nav id="navArtigos" class="col-sm-12 no-gutters w-auto p-0">
+                <div class="card-group m-3">
+                    
+                    <div class="card">
+                        <img src="/imagens/loguinha.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Título</h5>
+                          <p class="card-text h6">Prévia do artigo/Manchete.</p>
                         </div>
-                    </li>
-                    <!--
-                    <li class="artigo">
-                        <div>
-                            <h4>artigo 2</h4>
+                        <div class="card-footer">
+                          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalLong">
+                              Ler Artigo
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                              <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Título do Artigo</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body text-wrap">
+                                    <!--Imagem do cabeçalho-->  
+                                    <img class="img-fluid" src="/imagens/loguinha.png" alt="">
+                                      
+                                    <p class="w-auto p-3">Antes de mais nada: se tem dúvida sobre as diferenças entre Git e Github, dá uma conferida nesse vídeo. No primeiro post sobre Git e Github, ensinei a fazer a parte de configuração e instalação.No segundo, mostrei como fazer o fork de um repositório existente e baixar ele pra sua máquina Agora, chegou a hora de aprender a criar seu próprio repositório e interagir com ele Geralmente as pessoas criam repositórios no Github para hospedar seus projetos pessoais. E esses projetos não precisam ser necessariamente código.Como exemplo nesse post, eu vou criar um repositório para guardar os posts do meu blog. Os comandos que vou usar são os mesmos pra qualquer tipo de projeto/arquivo.</p>
+                                      
+                                    <p class="w-auto p-3 text-wrap">  
+                                      Em seguida, basta colocar o nome e descrição do repositório que você está criando e clicar em Create repository:Depois, aparecerá essa tela:O repositório foi criado, só que ainda está vazio.Vamos enviar nossos arquivos para lá!Inicializando um repositório na sua máquina Abra o Git Bash e vá até a pasta onde está o seu projeto.Eu no caso vou até a minha pasta Posts, onde tenho um post meu salvo no formato txt:
+                                    </p>
+                                      
+                                      <p class="w-auto p-3 text-wrap">
+                                      Agora, quero transformar essa minha pasta em um repositório Git. Pra isso, basta digitar git init e dar enter: $ git initInitialized empty Git repository in c:/Users/Gabriel/Posts/.git/ Ele está falando que iniciou um repositório vazio nessa pasta. Como eu sei que agora tenho um repositório nessa pasta? Se você abrir a pasta no File Explorer e configurar ele para mostrar os arquivos ocultos, verá que tem uma pasta a mais chamada .git: O Git usa essa pasta pra controlar as alterações feitas no seu repositório. Adicionando uma origin origin git@github.com:gabsferreira/postsdoblog.git Basicamente o que estamos dizendo nessa linha de comando é: "Git, esse meu repositório local se conectará com um remoto, o caminho dele(origin) é git@github.com:gabsferreira/postsdoblog.git. Estabeleça essa comunicação pra mim".
+                                    </p> 
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-success btn-sm" data-dismiss="modal">Close</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                         </div>
-                    </li>
-                    <li class="artigo">
-                        <div>
-                            <h4>artigo 3</h4>
-                        </div>
-                    </li>
-                    <li class="artigo">
-                        <div>
-                            <h4>artigo 4</h4>
-                        </div>
-                    </li>
-                    <li class="artigo">
-                        <div>
-                            <h4>artigo 5</h4>
-                        </div>
-                    </li>
-                    <li class="artigo">
-                        <div>
-                            <h4>artigo 6</h4>
-                        </div>
-                    </li>
-                    <li class="artigo">
-                        <div>
-                            <h4>artigo 7</h4>
-                        </div>
-                    </li>
-                    <li class="artigo">
-                        <div>
-                            <h4>artigo 8</h4>
-                        </div>
-                    </li>
-                    -->
-                </ul>
+                      </div>
+                  </div>
             </nav>
-            <div id="butaoMaisArtigos">
-                <a href="https://ruralnbr.herokuapp.com/artigos">Mais Artigos</a>
+            <div id="butaoMaisArtigos" class="col-sm-12 no-gutters">
+                <a class="btn btn-success m-2 btn-sm" href="https://ruralnbr.herokuapp.com/artigos">Mais Artigos</a>
             </div>
         </section>
         <section id="comunidade" class="row no-gutters">
-            <h2>Comunidade</h2>
-            <div id="apresentacaoComunidade">
-                <p>Aqui você pode ficar por dentro de tudo que acontece em toda a comunidade ruarl do vale do assú e todo RN. O RNBR se esforça para que o homem do campo fique a par de tudo que aconte, então confira alguns eventos abaixo.</p>
+            <h2 class="col-sm-12 no-gutters m-0 p-3 w-auto">Comunidade</h2>
+            <div id="apresentacaoComunidade" class="col-sm-12 no-gutters">
+                <p class="w-75 p-1 text-wrap">Aqui você pode ficar por dentro de tudo que acontece em toda a comunidade ruarl do vale do assú e todo RN. O RNBR se esforça para que o homem do campo fique a par de tudo que aconte, então confira alguns eventos abaixo.</p>
             </div>
-            <h3>Eventos Na Comunidade</h3>
-            <div id="eventos">
+            <h3 class="col-sm-12 no-gutters m-0 p-1 w-auto">Eventos Na Comunidade</h3>
+            <div class="col-sm-12 no-gutters w-auto m-0 p-3">
                 <ul id="listEventos">
                     <li class="itenEvento">
                         <div>
                             <h4>Nenhum evento para mostrar no momento.</h4>
                         </div>
                     </li>
-                    <!--
-                    <li class="itenEvento">
-                        <div>
-                            <h4>evento 2</h4>
-                        </div>
-                    </li>
-                    <li class="itenEvento">
-                        <div>
-                            <h4>evento 3</h4>
-                        </div>
-                    </li>
-                    <li class="itenEvento">
-                        <div>
-                            <h4>evento 4</h4>
-                        </div>
-                    </li>
-                    -->
                 </ul>
-                <div id="botaoMaisEventos">
-                    <a href="https://ruralnbr.herokuapp.com/eventos">Veja a lista completa de eventos</a>
+                <div id="butaoMaisArtigos">
+                    <a class="btn btn-success m-2 btn-sm" href="https://ruralnbr.herokuapp.com/eventos">Veja a lista completa de eventos</a>
                 </div>
             </div>
         </section>
@@ -149,35 +135,35 @@
             <aside class="sobre-equipe">
                 <h3 class="sobre-equipe-header">Equipe</h3>
                 <figure class="geraldo">
-                    <img style="width: 150px; height: 200px;" src="/imagens/geraldo.jpg">
+                    <img class="img-fluid" src="/imagens/geraldo.jpg">
                     <figcaption><h4>José Geraldo</h4><h5>coordenador do projeto</h5></figcaption>
                 </figure>
                 <figure class="daniel">
-                    <img style="width: 150px; height: 200px;" src="/imagens/daniel.jpg">
+                    <img class="img-fluid" src="/imagens/daniel.jpg">
                     <figcaption><h4>Daniel Águiar</h4><h5>Coordenador do projeto</h5></figcaption>
                 </figure>
                 <figure class="melissa">
-                    <img style="width: 150px; height: 200px;" src="/imagens/sabrina.jpg">
+                    <img class="img-fluid" src="/imagens/sabrina.jpg">
                     <figcaption><h4>Melissa Sabrina </h4><h5>Aluna de Agroecologia</h5></figcaption>
                 </figure>
                 <figure class="marcio">
-                    <img style="width: 150px; height: 200px;" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
+                    <img class="img-fluid" src="https://blog.rodeowest.com.br/wp-content/uploads/2018/10/comecando-uma-plantacao-de-arroz-1024x436.jpg">
                     <figcaption><h4>Marcio Rufino</h4><h5>Aluno de Informática</h5></figcaption>
                 </figure>
                 <figure class="ana">
-                    <img style="width: 150px; height: 200px;" src="/imagens/ana.jpg">
+                    <img class="img-fluid" src="/imagens/ana.jpg">
                     <figcaption><h4>Ana Paula</h4><h5>Aluna de Agroecologia</h5></figcaption>
                 </figure>
                 <figure class="nay">
-                    <img style="width: 150px; height: 200px;" src="/imagens/nay.jpg">
+                    <img class="img-fluid" src="/imagens/nay.jpg">
                     <figcaption><h4>Nayara Brito</h4><h5>Aluna de Informaática</h5></figcaption>
                 </figure>
                 <figure class="renan">
-                    <img style="width: 150px; height: 200px;" src="/imagens/renan.jpg">
+                    <img class="img-fluid" src="/imagens/renan.jpg">
                     <figcaption><h4>Anderson Renan</h4><h5>Aluno de Tecn. Agroecologia</h5></figcaption>
                 </figure>
                 <figure class="paulo">
-                    <img style="width: 150px; height: 200px;" src="/imagens/paulo.jpg">
+                    <img class="img-fluid" src="/imagens/paulo.jpg">
                     <figcaption><h4>Paulo Henrique</h4><h5>Aluno de Informática</h5></figcaption>
                 </figure>
             </aside> 
@@ -185,8 +171,8 @@
         <footer class="row no-gutters mt-5 p-4 border-top bg-light">
                 <small class="col-sm-12 d-flex justify-content-center m-2 p-3">&copy; Copyright 2019, Rural News Brasil</small>
                 <p class="col-sm-12 d-flex justify-content-center">
-                    <a class="btn btn-primary m-2 bg-success" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Siga-nos nas redes sociais</a>
-                    <button class="btn btn-primary m-2 bg-success" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Publique seu artigo no RNB</button>
+                    <a class="btn btn-success m-2" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Siga-nos nas redes sociais</a>
+                    <button class="btn btn-success m-2" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Publique seu artigo no RNB</button>
                 </p>
                 <div class="row no-gutters">
                     <div class="col">
