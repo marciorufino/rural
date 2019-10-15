@@ -8,10 +8,7 @@
     <meta name="ruaral news brasil - levando informação ao campo" content="notícias, agropecuária, campo, zona rural, agronegócio, vida no campo">
     <link rel="stylesheet" type="text/css" href="/css/estiloHeader.css"/>
     <link rel="stylesheet" type="text/css" href="/css/estiloHome.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloArtigosPI.css"/>
     <link rel="stylesheet" type="text/css" href="/css/estiloComunidade.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloSobreNos.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/estiloRodape.css"/>
     <link rel="stylesheet" href="/css/previsao.css">
     <link rel="stylesheet" type="text/css" href="/fontawesome-free-5.9.0-web/css/all.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
@@ -22,12 +19,8 @@
 
 </head>
 <body>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.js"></script>
-
-  <div class="interface container-fluid p-0 m-0">
-      <header class="row no-gutters">
+    <div class="interface container-fluid p-0 m-0">
+        <header class="row no-gutters mb-5">
           <nav class="col-sm-12 no-gutters navbar navbar-expand-lg navbar-light bg-light m-0 p-3 pl-5 shadow-sm">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -50,49 +43,27 @@
                   </ul>
               </div>
           </nav>
-      </header>
-      <div class="content-tempo" style="height: 50vh;">
-          
-          <div class="dropdown">
-              <button style="background-color: rgba(12, 136, 12, 0.705);" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Selecione a cidade
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href wm-link="tempo-natal.html" wm-destino=".div-tempo">Natal</a>
-                <a class="dropdown-item" >Caicó</a>
-                <a class="dropdown-item" href wm-link="/public/tempo-assu.html" wm-destino=".div-tempo">Assú</a>
-                <a class="dropdown-item" id="435701" onclick="">Ipanguaçu</a>
-              </div>
-
-              
-              <!-- DADOS DO TEMPO-->
-
-              <div class="div-tempo"></div>
-
-              <script>
-                  function navegarViaAjax(url, seletor) {
-                    if(!url || !seletor) return
-                    const elemento = document.querySelector(seletor)
-  
-                    fetch(url)
-                        .then(resp => resp.text())
-                        .then(html => {
-                          elemento.innerHTML = html
-                        })
-                  }
-  
-                  document.querySelectorAll('[wm-link]').forEach(link => {
-                    let url = link.attributes['wm-link'].value
-                    const seletorDestino = link.attributes['wm-destino'].value
-  
-                    link.onclick = e => {
-                      e.preventDefault()
-                      navegarViaAjax(url, seletorDestino)
-                    }
-                  })
-                </script>
+        </header>
+      
+        <main class="row no-gutters w-auto h-100 p-3 d-flex justify-content-center">
+            <div class="content-tempo p-5 col-sm-4">
+                <div class="dropdown h-100 d-flex justify-content-center row no-gutters">
+                    <div class="col-sm-12 d-flex justify-content-center">
+                    <button style="background-color: rgba(12, 136, 12, 0.705);" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Selecione a cidade
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href wm-link="/public/tempo-assu.html" id="455888" wm-destino=".div-tempo">Natal</a>
+                        <a class="dropdown-item" href wm-link="/public/tempo-assu.html" id="455887" wm-destino=".div-tempo">Mossoró</a>
+                        <a class="dropdown-item" href wm-link="/public/tempo-assu.html" id="456908" wm-destino=".div-tempo">Caicó</a>
+                        <a class="dropdown-item" href wm-link="/public/tempo-assu.html" id="420779" wm-destino=".div-tempo">Assú</a>
+                        <a class="dropdown-item" href wm-link="/public/tempo-assu.html" id="435701" wm-destino=".div-tempo">Ipanguaçu</a>
+                    </div>
+                    </div>
+                <div class="div-tempo col-sm-12"></div>
             </div>
-      </div>
+        </main>
+    </div>
       <footer class="row no-gutters mt-5 p-4 border-top bg-light">
           <small class="col-sm-12 d-flex justify-content-center m-2 p-3">&copy; Copyright 2019, Rural News Brasil</small>
           <p class="col-sm-12 d-flex justify-content-center">
@@ -123,4 +94,8 @@
       </footer>
   </div>
 </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/tempo.js"></script>
 </html>
