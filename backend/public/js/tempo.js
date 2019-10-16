@@ -16,7 +16,7 @@ function ajax(config) {
 }
 ajax({
     
-    url: "https://api.hgbrasil.com/weather?format=json-cors&key=98906950&user_ip=remote",
+    url: "https://api.hgbrasil.com/weather?format=json-cors&key=6ab3b186&user_ip=remote",
     metodo: "get",
     sucesso(resposta){
         const dados = JSON.parse(resposta)
