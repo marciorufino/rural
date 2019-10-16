@@ -15,13 +15,13 @@ function ajax(config) {
     xhr.send()
 }
 ajax({
-
-
-    url: "https://api.hgbrasil.com/weather?format=json-cors&woeid=435701",
+    
+    url: "https://api.hgbrasil.com/weather?format=json-cors&key=98906950&user_ip=remote",
     metodo: "get",
     sucesso(resposta){
         const dados = JSON.parse(resposta)
-        
+
+        document.getElementById('cidade').innerHTML = `${dados.results.city} ${dados.results.temp} °C`
     },
     erro(e){
         const msg = document.createTextNode(`${e.codigo}: ${e.texto}`)
